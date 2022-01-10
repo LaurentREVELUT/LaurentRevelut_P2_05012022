@@ -1,0 +1,926 @@
+*{
+    margin-left:0%;
+    margin-right:0%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family:raleway;
+    font-weight:bold;
+    width:100%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+/** Marge externe a gauche et a droite du menu */
+header {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+main{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+/** */
+header nav, header .conteneur-logo{
+    width: 50%;
+}
+
+header .conteneur-logo a img{
+    width: 20%;
+}
+
+/** Suppression de la mise en forme par defaut d'un lien */
+header nav ul li a {
+    text-decoration: none;
+}
+
+/** Suppression des listes a puces */
+header nav ul li {
+    list-style-type: none;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/** Changer la couleur des liens dans le menu de navigation */
+header nav ul li a{
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 0.8em;
+    font-weight:normal;
+}
+
+/** Changer la couleur des liens dans le menu de navigation */
+header nav ul li a:hover{
+    color: #0065FC;    
+    border-top: 2px solid #0065FC;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/*-- Mise en page du titre du formulaire--*/
+form{
+    
+    margin-bottom:2%;
+    
+}
+
+.formulaire  h2{
+    font-size:1em;
+    
+}
+
+.formulaire p{
+    font-weight: normal;
+    font-size:0.8em;
+}
+
+/*--mise en page du formulaire--*/
+
+form{
+    display:flex;
+    align-items:center;
+    width:267px;
+    border:2px solid #f2f2f2;
+    border-radius:12px;
+}
+
+form i{
+width:30px;
+height:25px;
+background-color:#f2f2f2;  
+text-align:center;
+border-radius:5px 0px 0px 5px;
+padding-top:8px;
+}
+
+form  input  {
+    font-size:0.8em;
+    text-align:center;
+
+}
+
+form input[type="text"]{
+    height:25px;
+    font-weight:bold;
+    border:none;
+}
+
+form  input[type="submit"]{
+    height:33px;
+    background-color:#0065fc;
+    color:white;
+    font-weight:bold;
+    border-radius:0px 5px 5px 0px;
+    border:none;
+    cursor:pointer;
+}
+
+form a{
+    display:none
+}
+
+/*--mise en page du filtres--*/
+
+.filtres{
+   
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+        
+   }
+
+
+
+.filtres h3{
+    font-size:1em;
+    margin-right:3%;
+}
+   .filtres a{
+       width:auto;
+       list-style-type:none;
+       text-decoration:none;
+       color:black;
+       font-size:0.8em;
+       border: 1px solid #f2f2f2;
+       line-height:2.5em;
+       border-radius:25px 25px 25px 25px;
+       margin-right:5%;
+      
+   }
+
+   
+.filtre{
+    display:flex;
+        align-items:center;
+        justify-content:center;
+}
+
+.filtre i{
+    color:#0065fc;
+    background-color:#deebff;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    font-size:1.3em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:10px;  
+}
+.filtre span{
+    font-size:1em;
+    
+}
+
+.filtres a :hover{
+    background-color:#deebff;
+    cursor:pointer;
+    border-radius:25px 25px 25px 25px;
+}
+
+ /*--mise en page information en bas du filtres--*/
+
+.information{
+    width:70%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:10px;
+   
+}
+
+.information i{
+    font-size:0.7em;
+    color:#0065FC;
+    border:1px solid #f2f2f2;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+
+/*--Mise en page hebergements marseille--*/
+
+/*-- mise en page des blocs --*/
+.heberg{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.list_heb{
+    display:flex;
+    flex-direction:column;
+    flex-basis:65%;
+    background-color:#f2f2f2;
+    border-radius:25px 25px 25px 25px;
+}
+
+.list_heb .title{
+    margin-left:23px;
+    
+    
+} 
+
+
+.heberg a{
+    text-decoration:none;
+}
+
+.heb_row{
+display:flex;
+flex-wrap: wrap;
+justify-content:space-around;
+margin-bottom:20px;
+margin-left:0px;
+margin-right:5px;
+}
+
+.link_card{
+    flex-basis:31%;
+    background-color:white;
+    border-radius:25px 25px 25px 25px;
+    box-shadow:darkgray;
+    border:4px solid white;
+    margin-bottom:15px;
+    align-items:center;
+}
+
+
+/*-- mise en page des cards--*/
+.card{
+    display:flex;
+    flex-direction:column;
+   max-height:300px;
+}
+
+.card :hover{
+    width:101%;
+
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    border-radius:25px 25px 0px 0px;
+    object-fit:cover;
+    overflow:hidden;
+}
+
+
+
+.libelle{
+    margin-left:10px;
+}
+
+.card .libelle{
+    line-height:1px;
+    padding-bottom:10px;
+    
+}
+
+
+.card h3{
+    color:black;
+    font-size:0.8em;
+
+}
+
+.card p{
+    color :darkgray;
+    font-weight:normal;
+    font-size:0.7em;
+}
+
+.card span{ 
+    font-weight:bold;
+    color:black;
+}
+
+.card i{
+    color:#0065fc;
+    font-size:0.6em;
+}
+
+.card i[class="far fa-star"]{
+    color:#f2f2f2;
+}
+
+/*-- mise en page "afficher plus"--*/
+
+.heberg .afficher{
+    width:30%;
+    margin-left:23px;
+    
+}
+
+.heberg .afficher a{
+    color:black;
+    font-size:0.8em;
+}
+
+/*--mise en page de la serie populaire--*/
+.populaire{
+    display:flex;
+    flex-direction:column;
+    flex-basis:32%;
+    background-color:#f2f2f2;
+    border-radius:25px 25px 25px 25px;
+    padding-left:2%;
+    padding-right:2%;
+}
+
+/*--mise en place du titre--*/
+.title_pop{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-left:10px;
+}
+
+
+/*-- mise en place du bloc car--*/
+
+.pop-column{
+    display:flex;
+    flex-direction:column;
+   
+    
+
+}
+
+/*--mise en place des cards--*/
+
+.pop_card{
+    
+    display:flex;
+    height:180px;
+    background-color:white;
+    border-radius:25px 25px 25px 25px;
+    line-height:3px;
+    box-shadow:darkgray;
+    border:4px solid white;
+    margin-bottom:20px;
+    transition-property: border-radius;
+    transition-duration:2s,2s;
+    transition-delay:0s;
+}
+
+.pop_card :hover{
+    width:42%;
+}
+
+.pop_card img{
+    width:40%;
+    height:180px;
+    border-radius:25px 0px 0px 25px;
+    object-fit:cover;
+
+}
+
+.pop_libelle{
+    padding-left:10px;
+}
+
+
+
+.pop_libelle h3{
+    color:black;
+    font-size:0.8em;
+   
+    
+
+}
+
+.pop_libelle p{
+    color :darkgray;
+    font-weight:normal;
+    font-size:0.7em;
+    padding-top:10px;
+}
+
+.pop_libelle i{
+    color:#0065fc;
+    font-size:0.6em;
+    padding-top:80px;
+    
+    
+}
+
+.pop_libelle i[class="far fa-star"]{
+    color:#f2f2f2;
+}
+
+.pop_libelle span{
+    color:black;
+    font-weight:bold;
+}
+
+/*--mise en place section activite--*/
+
+.activity{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:30px;
+}
+
+.global_activity{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+   
+}
+
+.activity_one{
+    width:24%;
+    height:400px;
+    margin-right:10px;
+   
+}
+
+.activity_two{
+    width:24%;
+    height:400px;
+
+    
+}
+
+
+
+.act_card_great{
+    width:100%;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    border-radius:25px 25px 25px 25px;
+    line-height:3px;
+    box-shadow:darkgray;
+    border:4px solid white;
+    box-shadow:2px 2px 2px #f2f2f2;
+   
+}
+
+.act_card_great :hover{
+    width:102%;
+    
+}
+
+.act_card_small :hover{
+    width:102%;
+    
+}
+
+
+
+.act_card_great img{
+    width:100%;
+    height:360px;
+    border-radius:25px 25px 0px 0px;
+    object-fit:cover;
+}
+.act_card_small{
+    width:97%;
+    height:190px;
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    border-radius:25px 25px 25px 25px;
+    line-height:3px;
+    box-shadow:darkgray;
+    border:4px solid white;
+margin-bottom:10px;
+box-shadow:2px 2px 2px #f2f2f2;
+transition-property: border-radius;
+    transition-duration:2s,2s;
+    transition-delay:0s;
+}
+
+
+.act_card_small img{
+    width:100%;
+    height:160px;
+    border-radius:25px 25px 0px 0px;
+    object-fit:cover;
+}
+
+.activity a{
+    text-decoration:none;
+    font-size:1em;
+}
+
+.act_libelle{
+    padding-left:10px;
+}
+
+
+
+.act_libelle h3{
+    color:black;
+    font-size:0.8em;
+   
+
+}
+
+/*--mise en page du footer--*/
+footer{
+    width:100%;
+    background-color:grey;
+    color:black;
+}
+
+.global_footer{
+    width:75%;
+    display:flex;
+    justify-content:space-between;
+    align-content:baseline;
+    
+}
+
+footer a{
+    text-decoration:none;
+    color:black;
+    font-weight:normal;
+    font-size:0.9em;
+}
+
+/*--Mise en page pour mobile--*/
+
+@media (max-width:767px){
+/*--centrage de la page sur mobile--*/
+
+   
+    
+    body{
+        
+        box-sizing: border-box;
+        font-family:raleway;
+        font-weight:bold;
+        width:98%;
+        margin-left:1%;
+        margin-right:1%;
+        
+    }  
+/*--mise en page du header--*/
+header{
+    width:98%;
+    display:flex;
+    flex-direction:column;
+    margin-left:2%;
+    margin-right:1%;
+    border-bottom:#f2f2f2;
+    border-bottom :grey;
+}
+
+
+
+main{
+    margin-left:3%;
+    margin-right:3%;
+
+}
+
+header .conteneur-logo{
+    width:100%;
+    
+}
+
+.conteneur-logo img{
+    width:20%;
+   padding-left:5%;
+    margin-right:5%;
+    
+    
+}
+header nav{
+    width:100%;
+    
+    
+}
+
+header nav ul{
+    width:72%;
+    display:flex;
+    justify-content:space-between;
+    
+    
+}
+header nav ul li a:hover{
+    color: #0065FC;    
+    border-bottom: 4px solid #0065FC;
+    border-top:none;
+    padding-top:15px;
+}
+
+
+
+.conteneur-logo{
+    text-align:center;
+   
+}
+
+/*--mise en page du formulaire--*/
+.formulaire{
+    width:98%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0 1%;
+   
+}
+
+.formulaire ::after{
+    content:'';
+    display:block;
+    width:100%;
+    height:3px;
+    background-color:#f2f2f2;
+    position:absolute;
+    top:86px;
+}
+
+.formulaire h2{
+
+    width:222px;
+    justify-content:center;
+    text-align:center;
+    
+}
+.formulaire p{
+    padding-bottom:10px;
+}
+
+
+
+form{
+    width:70%;
+    display:flex;
+    align-items:center;
+    border:2px solid #f2f2f2;
+    border-radius:12px;
+    background-color:white;
+}
+
+form .button{
+    display:none;
+}
+
+form input[type="text"]{
+height:31px;
+width:73%;
+}
+
+form i[class="fas fa-search"]{
+    width:35px;
+    height:31px;
+    background-color:#0065fc;
+    color:white;
+    border-radius :7px;
+    padding-top:10px;
+}
+    
+form i[class="fas fa-map-marker-alt"]{
+    width:34px;
+    height:33px;
+    background-color:#f2f2f2;
+    border-radius:5px 0px 0px 5px;
+
+}
+
+form a{
+    display:flex;
+}
+
+/*--mise en place des filtres--*/
+
+.filtres{
+    width:78%;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin-bottom:20px;
+    background-color:mintcream;
+
+}
+
+/*--mise en place information--*/
+.information{
+    width:85%;
+    margin-right:5%;
+    margin-left:5%;
+    display:flex;
+    justify-content:space-around;
+    
+}
+
+.information p{
+    width:248px;
+    font-size:0.8em;
+    font-weight:normal;
+    
+}
+
+.information i{
+    width:30px;
+    height:30px;
+    
+}
+
+
+
+/*--mise en place du heberg--*/
+.heberg{
+    width:98%;
+    display:flex;
+    flex-direction:column-reverse;
+    padding:5px;
+    margin-left:1%;
+    margin-right:1%;
+    
+}
+
+.list_heb{
+    
+    display:flex;
+    flex-direction:column;
+    padding:5px;
+    background-color:white;
+}
+
+.link_card{
+    
+    background-color:white;
+    border-radius:25px 25px 25px 25px;
+    box-shadow:darkgray;
+    border:1px solid #f2f2f2;
+    
+}
+
+.populaire{
+    display:flex;
+    padding:5px;
+    border-radius:0px;
+    
+}
+.pop_card img{
+    width:60%;
+}
+
+
+.pop_libelle{
+    width:50%;
+    text-align:left;;
+    
+    
+}
+
+.heb_row{
+    display:flex;
+    flex-direction:column;
+    padding:5px;
+
+}
+
+/*--mise en page section activity--*/
+
+.activity{
+    width:98%;
+    height:1550px;
+    margin-left:1%;
+    margin-right:1%;
+    padding:5px;
+   
+    
+}
+
+.global_activity{
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    width:98%;
+    margin-left:1%;
+    margin-right:1%;
+    align-content:space-around;
+    
+}
+ .activity_two{
+     display:flex;
+     width:100%;
+     height:190px;
+     flex-direction:column;
+     margin-bottom:307px;
+ }
+
+ .activity_one{
+     width:100%;
+     height:190px;
+    margin-right:0px;
+    margin-bottom:58px;
+ }
+     
+
+
+ .act_card_great{
+     width:95%;
+     height:230px;
+     display:flex;
+     flex-direction:column;
+     background-color:white;
+     border-radius:25px 25px 25px 25px;
+     line-height:3px;
+     box-shadow:darkgray;
+     border:4px solid white;
+     box-shadow:2px 2px 2px #f2f2f2;
+
+
+ }
+
+ .act_card_small{
+    width:95%;
+    height:230px;
+    display:flex;
+    flex-direction:column;
+
+    background-color:white;
+    border-radius:25px 25px 25px 25px;
+    line-height:3px;
+    box-shadow:darkgray;
+    border:4px solid white;
+    box-shadow:2px 2px 2px #f2f2f2;
+
+
+}
+
+.activity_one img {
+
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+
+.activity_two img{
+
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+
+
+/*--mise en place du footer--*/
+footer{
+    width:98%;
+    margin: 0 1%;
+background-color:#f2f2f2;
+}
+
+.global_footer{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-left:5%;
+    margin-right:5%;
+    padding-left:2%;
+}
+
+.footer_one{
+    width:100%;
+       
+}
+
+.footer_one p{
+    line-height:5px;
+}
+
+
+
+
+}

@@ -6,7 +6,6 @@
 body{
     box-sizing: border-box;
     font-family:raleway;
-    font-weight:bold;
     width:100%;
     margin-left:1%;
     margin-right:1%;
@@ -52,7 +51,7 @@ header nav ul li a{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight:normal;
 }
 
@@ -75,19 +74,16 @@ header nav {
 
 /*-- Mise en page du titre du formulaire--*/
 form{
-    
     margin-bottom:2%;
-    
 }
 
 .formulaire  h2{
-    font-size:1em;
-    
+    font-size:1.5em;
 }
 
 .formulaire p{
     font-weight: normal;
-    font-size:0.8em;
+    font-size:1em;
 }
 
 /*--mise en page du formulaire--*/
@@ -145,7 +141,12 @@ form a{
         
    }
 
-
+.filtres .bloc{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:baseline;
+}
 
 .filtres h3{
     font-size:1em;
@@ -160,7 +161,7 @@ form a{
        border: 1px solid #f2f2f2;
        line-height:2.5em;
        border-radius:25px 25px 25px 25px;
-       margin-right:5%;
+       margin-right:2%;
       
    }
 
@@ -181,11 +182,12 @@ form a{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-right:10px;  
 }
 .filtre span{
-    font-size:1em;
-    
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .filtres a :hover{
@@ -230,11 +232,11 @@ form a{
 }
 
 .list_heb{
-    display:flex;
-    flex-direction:column;
-    flex-basis:65%;
-    background-color:#f2f2f2;
-    border-radius:25px 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    background-color: #f2f2f2;
+    border-radius: 25px 25px 25px 25px;
 }
 
 .list_heb .title{
@@ -249,22 +251,23 @@ form a{
 }
 
 .heb_row{
-display:flex;
-flex-wrap: wrap;
-justify-content:space-around;
-margin-bottom:20px;
-margin-left:0px;
-margin-right:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+
 }
 
 .link_card{
-    flex-basis:31%;
-    background-color:white;
-    border-radius:25px 25px 25px 25px;
-    box-shadow:darkgray;
-    border:4px solid white;
-    margin-bottom:15px;
-    align-items:center;
+    flex-basis: 30%;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: darkgray;
+    border: 4px solid white;
+    margin-bottom: 3%;
+    align-items: center;
 }
 
 
@@ -272,13 +275,12 @@ margin-right:5px;
 .card{
     display:flex;
     flex-direction:column;
-   max-height:300px;
+    max-height:300px;
 }
 
-.card :hover{
+/* .card :hover{
     width:101%;
-
-}
+} */
 
 .card img{
     width:100%;
@@ -337,7 +339,12 @@ margin-right:5px;
 
 .heberg .afficher a{
     color:black;
-    font-size:0.8em;
+    font-weight:bold;
+    font-size:1em;
+}
+
+.heberg .afficher a:hover{
+    color:#0065fc;
 }
 
 /*--mise en page de la serie populaire--*/
@@ -387,9 +394,6 @@ margin-right:5px;
     transition-delay:0s;
 }
 
-.pop_card :hover{
-    width:42%;
-}
 
 .pop_card img{
     width:40%;
@@ -452,6 +456,8 @@ margin-right:5px;
    
 }
 
+
+
 .activity_one{
     width:24%;
     height:400px;
@@ -475,24 +481,10 @@ margin-right:5px;
     flex-direction:column;
     background-color:white;
     border-radius:25px 25px 25px 25px;
-    line-height:3px;
-    box-shadow:darkgray;
-    border:4px solid white;
+    border:1px solid white;
     box-shadow:2px 2px 2px #f2f2f2;
    
 }
-
-.act_card_great :hover{
-    width:102%;
-    
-}
-
-.act_card_small :hover{
-    width:102%;
-    
-}
-
-
 
 .act_card_great img{
     width:100%;
@@ -508,13 +500,10 @@ margin-right:5px;
     background-color:white;
     border-radius:25px 25px 25px 25px;
     line-height:3px;
-    box-shadow:darkgray;
-    border:4px solid white;
-margin-bottom:10px;
-box-shadow:2px 2px 2px #f2f2f2;
-transition-property: border-radius;
-    transition-duration:2s,2s;
-    transition-delay:0s;
+    border:1px solid white;
+    margin-bottom:10px;
+    box-shadow:2px 2px 2px #f2f2f2;
+    
 }
 
 
@@ -546,16 +535,14 @@ transition-property: border-radius;
 /*--mise en page du footer--*/
 footer{
     width:100%;
-    background-color:grey;
+    background-color:#f2f2f2;
     color:black;
 }
 
 .global_footer{
-    width:75%;
     display:flex;
-    justify-content:space-between;
-    align-content:baseline;
-    
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 footer a{
@@ -563,6 +550,14 @@ footer a{
     color:black;
     font-weight:normal;
     font-size:0.9em;
+}
+
+footer .footer_one{
+    width: 35%;
+}
+
+.footer_one a:hover{
+    color:#0065fc;
 }
 
 /*--Mise en page pour mobile--*/
@@ -647,7 +642,8 @@ header nav ul li a:hover{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    margin:0 1%;
+    margin-left:1%;
+    margin-right:1%;
    
 }
 
@@ -661,26 +657,37 @@ header nav ul li a:hover{
     top:86px;
 }
 
-.formulaire h2{
+.formulaire h1{
 
-    width:222px;
-    justify-content:center;
-    text-align:center;
+    width:63%;
+    margin-left:0%;
+    margin-right:12%;
+    text-align:left;   
+    font-size:1em;
     
 }
 .formulaire p{
     padding-bottom:10px;
+    font-size:0.8em;
+    font-weight:normal;
+    font-family:#f2f2f2;
+    margin-left:0%;
+    margin-right:12%;
+
 }
 
 
 
 form{
-    width:70%;
+    width:64%;
     display:flex;
     align-items:center;
     border:2px solid #f2f2f2;
     border-radius:12px;
     background-color:white;
+    margin-left:0%;
+    margin-right:12%;
+    
 }
 
 form .button{
@@ -689,11 +696,13 @@ form .button{
 
 form input[type="text"]{
 height:31px;
-width:73%;
+width:67%;
+text-align:left;
+padding-left:10px;
 }
 
 form i[class="fas fa-search"]{
-    width:35px;
+    width:40px;
     height:31px;
     background-color:#0065fc;
     color:white;
@@ -702,11 +711,11 @@ form i[class="fas fa-search"]{
 }
     
 form i[class="fas fa-map-marker-alt"]{
-    width:34px;
+    width:40px;
     height:33px;
     background-color:#f2f2f2;
     border-radius:5px 0px 0px 5px;
-
+padding-top:8px;
 }
 
 form a{
@@ -716,16 +725,38 @@ form a{
 /*--mise en place des filtres--*/
 
 .filtres{
-    width:78%;
-    height:300px;
+    width:92%;
+    height:217px;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:flex-start;
     margin-bottom:20px;
-    background-color:mintcream;
+    
+    padding-left:3%;
 
 }
+
+.filtres h3{
+    margin-left:20px;
+}
+
+.filtres .bloc{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    flex-wrap:wrap;
+    margin-left:20px;
+    
+}
+
+.bloc a{
+    margin-bottom:20px;
+    margin-right :15px;
+    
+}
+
 
 /*--mise en place information--*/
 .information{
@@ -734,7 +765,7 @@ form a{
     margin-left:5%;
     display:flex;
     justify-content:space-around;
-    
+    padding-left:15px;
 }
 
 .information p{
@@ -760,6 +791,7 @@ form a{
     padding:5px;
     margin-left:1%;
     margin-right:1%;
+    gap:10px;
     
 }
 
@@ -770,6 +802,12 @@ form a{
     padding:5px;
     background-color:white;
 }
+
+.list_heb .heb_row{
+    display:flex;
+    flex-direction:column;
+}
+
 
 .link_card{
     
@@ -786,6 +824,10 @@ form a{
     border-radius:0px;
     
 }
+ .pop_card{
+     width:97%;
+ }
+
 .pop_card img{
     width:60%;
 }
@@ -798,18 +840,11 @@ form a{
     
 }
 
-.heb_row{
-    display:flex;
-    flex-direction:column;
-    padding:5px;
-
-}
-
 /*--mise en page section activity--*/
 
 .activity{
     width:98%;
-    height:1550px;
+    height:1440px;
     margin-left:1%;
     margin-right:1%;
     padding:5px;
@@ -821,82 +856,63 @@ form a{
     display:flex;
     flex-direction:column;
     justify-content:start;
-    align-items:center;
     width:98%;
     margin-left:1%;
     margin-right:1%;
-    align-content:space-around;
+    align-items:space-around;
     
 }
  .activity_two{
      display:flex;
      width:100%;
-     height:190px;
+     height:180px;
      flex-direction:column;
+     align-items:space-around;
      margin-bottom:307px;
+     
  }
 
  .activity_one{
      width:100%;
-     height:190px;
+     height:180px;
     margin-right:0px;
-    margin-bottom:58px;
+    margin-bottom:50px;
+   
  }
-     
-
-
- .act_card_great{
-     width:95%;
-     height:230px;
-     display:flex;
-     flex-direction:column;
-     background-color:white;
-     border-radius:25px 25px 25px 25px;
-     line-height:3px;
-     box-shadow:darkgray;
-     border:4px solid white;
-     box-shadow:2px 2px 2px #f2f2f2;
-
-
- }
-
- .act_card_small{
-    width:95%;
-    height:230px;
-    display:flex;
-    flex-direction:column;
-
-    background-color:white;
-    border-radius:25px 25px 25px 25px;
-    line-height:3px;
-    box-shadow:darkgray;
-    border:4px solid white;
-    box-shadow:2px 2px 2px #f2f2f2;
-
-
-}
 
 .activity_one img {
 
     width:100%;
-    height:200px;
+    height:180px;
     object-fit:cover;
-    margin-bottom:10px;
+    
 }
 
 
 .activity_two img{
 
     width:100%;
-    height:200px;
+    height:180px;
     object-fit:cover;
 }
 
+.act_card_small{
+    margin-bottom:48px;
+    height:180px;
+    width:97%;
+    
+}
 
+.act_card_great{
+    height:180px;
+    width:97%;
+    
+    
+}
 
 /*--mise en place du footer--*/
 footer{
-    width:98%;
+    width:100%;
     margin: 0 1%;
 background-color:#f2f2f2;
 }
@@ -909,10 +925,12 @@ background-color:#f2f2f2;
     margin-left:5%;
     margin-right:5%;
     padding-left:2%;
+    
 }
 
-.footer_one{
-    width:100%;
+footer .footer_one{
+    width:97%;
+   
        
 }
 

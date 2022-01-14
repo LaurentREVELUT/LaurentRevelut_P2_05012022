@@ -136,7 +136,7 @@ form a{
 /*--mise en page du filtres--*/
 
 .filtres{
-   
+   width:70%;
     display:flex;
     justify-content:flex-start;
     align-items:baseline;
@@ -391,9 +391,7 @@ form a{
     box-shadow:darkgray;
     border:4px solid white;
     margin-bottom:20px;
-    transition-property: border-radius;
-    transition-duration:2s,2s;
-    transition-delay:0s;
+    
 }
 
 
@@ -983,6 +981,9 @@ header .conteneur-logo a img{
     font-weight:normal;
 }
 
+/*--mise en place du filtre--*/
+
+
 .filtres h3{
     font-size:1em;
 }
@@ -994,9 +995,13 @@ header .conteneur-logo a img{
 .filtres .bloc{
     display:flex;
     justify-content:flex-start;
+    flex-wrap:wrap;
     align-items:baseline;
-
+    align-content:space-around;
+    height:120px;
 }
+
+/*--mise en place information--*/
 .information{
     margin-bottom:10px;
 }
@@ -1008,7 +1013,13 @@ header .conteneur-logo a img{
 
 /*--mise en place section heberg--*/
 .heberg{
-    gap:15px;
+
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:space-around;
+    align-items:center;
+    
+
 }
 
 .list_heberg{
@@ -1016,26 +1027,78 @@ header .conteneur-logo a img{
 }
 
 /*--mise en page des libelles heber et populaires--*/
-.card .libelle h3{
+.populaire{
+    flex-basis:100%;
+}
+.pop_column{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:baseline;
+    flex-wrap:wrap;
+}
+
+.pop_column a{
+    flex-basis:32%;
+}
+
+
+.pop_card img{
+    width:45%;
+}
+
+.pop_card .pop_libelle h3{
+    font-size:0.7em;
+   
+}
+
+.pop_card .pop_libelle p{
     font-size:0.7em;
 }
 
-.card .libelle p{
-    font-size:0.7em;
-}
-
-.card .libelle i{
+.pop_card .pop_libelle i{
     font-size:0.6em;
 }
+ .pop_libelle{
+     padding-left:5px;
+ }
 
-.pop_card .pop_libelle h3, .pop_card .pop_libelle p{
-    font-size:0.7em;
+
+/*--mise en page libelle section activités--*/
+
+.global_activity{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.activity_one, .activity_two{
+    width:48%;
+    margin-bottom :15px;
     
 }
 
-/*--mise en page libelle section activités--*/
+
 .global_activity .act_libelle{
     font-size:0.9em;
+}
+
+/*-- mise en page du footer--*/
+
+.global_footer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:baseline;
+    
+}
+
+.global_footer{
+    margin-left:9%;
+    margin-right:3%;
 }
 
 

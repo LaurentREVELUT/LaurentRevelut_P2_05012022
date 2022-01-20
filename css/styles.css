@@ -136,7 +136,7 @@ form a{
 /*--mise en page du filtres--*/
 
 .filtres{
-   width:70%;
+   width:80%;
     display:flex;
     justify-content:flex-start;
     align-items:baseline;
@@ -560,545 +560,382 @@ footer .footer_one{
     color:#0065fc;
 }
 
-/*--Mise en page pour mobile--*/
+/*--mise en page mobile--*/
 
 @media (max-width:767px){
-/*--centrage de la page sur mobile--*/
 
-   
-    
-    body{
+
+    /*--mise en page du header--*/
+
+    header{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        align-content:space-around;
         
-        box-sizing: border-box;
-        font-family:raleway;
-        font-weight:bold;
-        width:98%;
-        margin-left:1%;
-        margin-right:1%;
+    }
+
+    .conteneur-logo{
+        text-align:center;
         
-    }  
-/*--mise en page du header--*/
-header{
-    width:98%;
-    display:flex;
-    flex-direction:column;
-    margin-left:2%;
-    margin-right:1%;
-    border-bottom:#f2f2f2;
-    border-bottom :grey;
-}
+    }
 
+    header .conteneur-logo a img{
+        width:45%;
+    }
 
+    header nav {
+        width:100%;
+        
+    }
 
-main{
-    margin-left:3%;
-    margin-right:3%;
-
-}
-
-header .conteneur-logo{
-    width:100%;
+    header nav ul li{
+        
+    margin-left:0px;
     
-}
+    }
 
-.conteneur-logo img{
-    width:20%;
-   padding-left:5%;
-    margin-right:5%;
-    
-    
-}
-header nav{
-    width:100%;
-    
-    
-}
+    header nav ul{
+        justify-content:space-around;
+        padding-left:0px;
+        text-align:left;
+        
+    }
 
-header nav ul{
-    width:72%;
-    display:flex;
-    justify-content:space-between;
-    
-    
-}
-header nav ul li a:hover{
-    color: #0065FC;    
-    border-bottom: 4px solid #0065FC;
-    border-top:none;
-    padding-top:15px;
-}
+    header nav ul li a{
+        padding-left:0px;
+    }
 
 
+    /*--mise en page du formulaire--*/
 
-.conteneur-logo{
-    text-align:center;
-   
-}
+    .formulaire{
+        width:100%;
+        margin:auto;
+        
+    }
 
-/*--mise en page du formulaire--*/
-.formulaire{
-    width:98%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin-left:1%;
-    margin-right:1%;
-   
-}
+    .formulaire h1{
+        width:76%;
+        margin:auto;
+        font-size:1.2em;
+        text-align:center;
+        margin-bottom:20px;
+        
+    }
 
-.formulaire ::after{
-    content:'';
-    display:block;
-    width:100%;
-    height:3px;
-    background-color:#f2f2f2;
-    position:absolute;
-    top:86px;
-}
+    .formulaire p{
+        width:70%;
+        margin:auto;
+        text-align:left;
+        font-size:0.8em;
+        margin-bottom:20px;
+        
+    }
 
-.formulaire h1{
-
-    width:63%;
-    margin-left:0%;
-    margin-right:12%;
-    text-align:left;   
-    font-size:1em;
-    
-}
-.formulaire p{
-    padding-bottom:10px;
-    font-size:0.8em;
-    font-weight:normal;
-    font-family:#f2f2f2;
-    margin-left:0%;
-    margin-right:12%;
-
-}
-
-
-
-form{
-    width:69%;
-    display:flex;
-    align-items:center;
-    border:2px solid #f2f2f2;
-    border-radius:12px;
-    background-color:white;
-    margin-left:4%;
-    margin-right:12%;
-    
-}
-
-form .button{
-    display:none;
-}
-
-form input[type="text"]{
-height:31px;
-width:67%;
-text-align:left;
-padding-left:10px;
-}
-
-form i[class="fas fa-search"]{
-    width:40px;
-    height:31px;
-    background-color:#0065fc;
-    color:white;
-    border-radius :7px;
-    padding-top:10px;
-}
-    
-form i[class="fas fa-map-marker-alt"]{
-    width:40px;
-    height:33px;
-    background-color:#f2f2f2;
-    border-radius:5px 0px 0px 5px;
-padding-top:8px;
-}
-
-form a{
-    display:flex;
-}
-
-/*--mise en place des filtres--*/
+    form{
+    margin:auto;
+    margin-bottom:20px;
+    }
 
 .filtres{
-    width:92%;
-    height:217px;
-    display:flex;
+    width:100%;
+    height:200px;
+    margin:auto;
     flex-direction:column;
-    justify-content:space-between;
-    align-items:flex-start;
     margin-bottom:20px;
+} 
     
-    padding-left:3%;
-
-}
-
 .filtres h3{
-    margin-left:20px;
+    margin-left:14%;
+    
 }
 
 .filtres .bloc{
-    width:100%;
-    display:flex;
-    justify-content:flex-start;
-    align-items:baseline;
-    flex-wrap:wrap;
-    margin-left:20px;
-    
+    width:82%;
+    margin:auto;
+    height:200px;
+flex-wrap:wrap;
+justify-content:space-between;
+padding-left:30px;
+
 }
 
-.bloc a{
-    margin-bottom:20px;
-    margin-right :15px;
-    
-}
-
-
-/*--mise en place information--*/
 .information{
-    width:85%;
-    margin-right:5%;
-    margin-left:5%;
-    display:flex;
-    justify-content:space-around;
-    padding-left:15px;
+    width:75%;
+    margin:auto;
+    margin-bottom:15px;
+        
 }
+
+
 
 .information p{
-    width:248px;
     font-size:0.8em;
-    font-weight:normal;
-    
-}
-
-.information i{
-    width:30px;
-    height:30px;
-    
 }
 
 
-
-/*--mise en place du heberg--*/
+/*--mise en page hebergement--*/
 .heberg{
-    width:98%;
-    display:flex;
-    flex-direction:column-reverse;
-    padding:5px;
-    margin-left:1%;
-    margin-right:1%;
-    gap:10px;
-    
+flex-direction:column-reverse;
+
 }
 
 .list_heb{
-    
-    display:flex;
-    flex-direction:column;
-    padding:5px;
     background-color:white;
 }
 
-.list_heb .heb_row{
-    display:flex;
-    flex-direction:column;
+.list_heb .title{
+    margin-left:13px;
 }
 
-
-.link_card{
+.heb_row{
     
-    background-color:white;
-    border-radius:25px 25px 25px 25px;
-    box-shadow:darkgray;
-    border:1px solid #f2f2f2;
+flex-direction:column;
+background-color:#f2f2f2;
+border-radius:25px 25px 25px 25px;
+margin-bottom:20px;
+
+}
+
+.heberg .afficher{
+    width:35%;
+    margin-left:13px;
     
 }
 
 .populaire{
-    display:flex;
-    padding:5px;
     border-radius:0px;
-    
-}
- .pop_card{
-     width:97%;
- }
-
-.pop_card img{
-    width:60%;
 }
 
 
-.pop_libelle{
-    width:50%;
-    text-align:left;;
-    
-    
-}
+/*--mise en page activity--*/
 
-/*--mise en page section activity--*/
-
-.activity{
-    width:98%;
-    height:1440px;
-    margin-left:1%;
-    margin-right:1%;
-    padding:5px;
-   
-    
+.activity h3{
+    margin-left:13px;
 }
 
 .global_activity{
-    display:flex;
-    flex-direction:column;
-    justify-content:start;
+flex-direction:column;
+padding-top:15px;
+}
+
+.global_activity img{
+    height:230px;
+}
+
+.activity_one{
     width:98%;
-    margin-left:1%;
-    margin-right:1%;
-    align-items:space-around;
-    
-}
-
-.global_activity a{
-    box-shadow:5px 5px 5px #f2f2f2;
-}
-
- .activity_two{
-     display:flex;
-     width:100%;
-     height:180px;
-     flex-direction:column;
-     align-items:space-around;
-     margin-bottom:307px;
-     
- }
-
- .activity_one{
-     width:100%;
-     height:180px;
-    margin-right:0px;
-    margin-bottom:50px;
-   
- }
-
-.activity_one img {
-
-    width:100%;
-    height:180px;
-    object-fit:cover;
-    
-}
-
-
-.activity_two img{
-
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-
-.act_card_small{
-    margin-bottom:48px;
-    height:180px;
-    width:99%;
+    height:282px;
+    margin:auto;
     
 }
 
 .act_card_great{
-    height:180px;
-    width:99%;
-    
-    
+    height:270px;
 }
 
 
+.activity_two{
+    width:98%;
+    margin:auto;
+    height:564px;
+}
 
-
-/*--mise en place du footer--*/
-footer{
+.act_card_small{
+    height:270px;
     width:100%;
-    margin: 0 1%;
-background-color:#f2f2f2;
 }
+
+
+
+/*--mise en page du footer--*/
 
 .global_footer{
-    width:90%;
+    width:94%;
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
-    margin-left:5%;
-    margin-right:5%;
-    padding-left:2%;
-    
-}
+    justify-content:space-around;
+    }
 
 footer .footer_one{
-    width:97%;
-   
-       
+    width:70%;
+    height:150px;
+    align-content:flex-start;
+   line-height:10px;
+    
+}
 }
 
-.footer_one p{
-    line-height:5px;
-}
-
-}
-/*--Mise en page pour tablette--*/
+/*--mise en page de la version tablette--*/
 
 @media (min-width:768px) and (max-width:991px){
-    
-/*-- mise en page du header--*/    
 
-header .conteneur-logo, header nav{
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    
-}
+/*-- mise en page du header--*/
 
-header .conteneur-logo {
-    margin-top:10px;
-    
+header{
+    margin-bottom:20px;
 }
 
 header .conteneur-logo a img{
-    width: 37%;
-    
+    width:30%;
 }
 
-/*--mise en page du formulaire--*/
+/*-- mise en page du formulaire--*/
 
-.formulaire h1{
-    font-size:1em;
-}
-
-.formulaire p{
-    font-size:0.8em;
-    font-weight:normal;
-}
-
-/*--mise en place du filtre--*/
-
-
-.filtres h3{
-    font-size:1em;
-}
-
-.filtres .filtre span{
-    font-size:1em;
-}
-
-.filtres .bloc{
+.formulaire{
+    height:300px;
     display:flex;
-    justify-content:flex-start;
-    flex-wrap:wrap;
-    align-items:baseline;
-    align-content:space-around;
-    height:120px;
-}
-
-/*--mise en place information--*/
-.information{
-    margin-bottom:10px;
-}
-
-.information p{
-    font-size:0.8em;
-    font-weight:normal;
-}
-
-/*--mise en place section heberg--*/
-.heberg{
-
-    display:flex;
-    flex-direction:column-reverse;
-    justify-content:space-around;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
     
-
 }
 
-.list_heberg{
-    flex-basis:75%;
+.formulaire h1{
+    width:70%;
+    margin:auto;
+    text-align:center;
+   }
+
+.formulaire p{
+        margin-bottom:20px;
 }
 
-/*--mise en page des libelles heber et populaires--*/
-.populaire{
-    flex-basis:100%;
-}
-.pop_column{
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items:baseline;
-    flex-wrap:wrap;
+form{
+    width:322px;
 }
 
-.pop_column a{
-    flex-basis:32%;
+form input{
+    font-size:1em;
 }
 
-
-.pop_card img{
-    width:45%;
+form input[type="text"]{
+    height:40px;
 }
 
-.pop_card .pop_libelle h3{
-    font-size:0.7em;
-   
+form input[type="submit"]{
+    height:43px;
 }
 
-.pop_card .pop_libelle p{
-    font-size:0.7em;
-}
-
-.pop_card .pop_libelle i{
-    font-size:0.6em;
-}
- .pop_libelle{
-     padding-left:5px;
- }
-
-
-/*--mise en page libelle section activités--*/
-
-.global_activity{
-    display:flex;
-    width:100%;
-    justify-content:space-around;
-    align-items:flex-start;
-    flex-wrap:wrap;
-}
-
-.activity_one, .activity_two{
-    width:48%;
-    margin-bottom :15px;
+form i{
+    height:36px;
     
 }
+    .filtres{
+        width:100%;
+        flex-direction:column;
+        margin-bottom:20px;
+        
+    }
+
+.filtres h3{
+    margin-left:13px;
+}
+
+/*--mise en page section hebergement--*/
 
 
-.global_activity .act_libelle{
+.heberg{
+   flex-direction:column-reverse; 
+}
+
+.heb_row{
+flex-direction:column;
+
+}
+
+.card img{
+    height:200px;
+}
+
+.card .libelle{
+    line-height:3px;
+}
+
+.card h3{
+    font-size:1em;
+}
+
+.card p{
     font-size:0.9em;
 }
 
-/*-- mise en page du footer--*/
+.card i{
+    font-size:0.8em;
+}
 
-.global_footer{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:baseline;
+/*--mise en page de la partie populaire--*/
+
+.pop_card{
+    height:220px;
+}
+
+.pop_card img{
+    width:60%;
+    height:220px;
+}
+
+
+.pop_libelle h3{
+    font-size:1em;
+}
+
+.pop_libelle p{
+    font-size:0.9em;
+}
+
+.pop_libelle i{
+    font-size:0.8em;
+}
+
+/*--mise en page de la section activité--*/
+
+.global_activity{
+    flex-direction:column;
+    justify-content:space-around;
     
 }
 
+.global_activity h3{
+    font-size:1em;
+}
+
+.activity_one{
+    width:100%;
+    height:310px;
+}
+
+.activity_two{
+    width:100%;
+    height:630px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin-bottom:10px;
+
+}
+
+.act_card_great{
+    width:98%;
+    height:300px;
+    margin:auto;
+}
+.act_card_great img, .act_card_small img{
+    height:260px;
+}
+
+.act_card_small{
+    width:98%;
+    margin:auto;
+    height:300px;
+}
+
+/*--mise en page du footer--*/
+
 .global_footer{
-    margin-left:9%;
-    margin-right:3%;
+    text-align:center;
+   
 }
 
 

@@ -280,9 +280,6 @@ form a{
     max-height:300px;
 }
 
-/* .card :hover{
-    width:101%;
-} */
 
 .card img{
     width:100%;
@@ -569,11 +566,18 @@ footer .footer_one{
 
     header{
         flex-direction:column;
-        justify-content:center;
+        justify-content:space-around;
         align-items:center;
         align-content:space-around;
+        margin-bottom:15px;
+        border-bottom:4px solid #f2f2f2;
+        margin-left:0px;
+        margin-right:0px;
         
+       
     }
+
+    
 
     .conteneur-logo{
         text-align:center;
@@ -590,7 +594,7 @@ footer .footer_one{
     }
 
     header nav ul li{
-        
+        height:10px;
     margin-left:0px;
     
     }
@@ -604,8 +608,24 @@ footer .footer_one{
 
     header nav ul li a{
         padding-left:0px;
+        
+        
+        
     }
 
+
+    header nav ul li a:hover{
+        color: #0065FC;    
+        border-bottom: 2px solid #0065FC;
+        border-top:none;
+        padding-bottom:9px;
+    }
+
+
+    main{
+        margin-left:0%;
+        margin-right:0%;
+    }
 
     /*--mise en page du formulaire--*/
 
@@ -620,7 +640,7 @@ footer .footer_one{
         margin:auto;
         font-size:1.2em;
         text-align:center;
-        margin-bottom:20px;
+        margin-bottom:30px;
         
     }
 
@@ -629,14 +649,33 @@ footer .footer_one{
         margin:auto;
         text-align:left;
         font-size:0.8em;
-        margin-bottom:20px;
+        margin-bottom:30px;
         
     }
 
     form{
+        width:210px;
     margin:auto;
     margin-bottom:20px;
     }
+
+ form a{
+     display:flex;
+     width:37px;
+     height:33px;
+     text-decoration:none;
+ }
+
+ form i[class="fas fa-search"]{
+     background-color:#0065fc;
+     color:white;
+     border-radius:5px;
+     
+ }
+
+form .button{
+    display:none;
+}
 
 .filtres{
     width:100%;
@@ -678,7 +717,7 @@ padding-left:30px;
 /*--mise en page hebergement--*/
 .heberg{
 flex-direction:column-reverse;
-
+width:100%;
 }
 
 .list_heb{
@@ -692,10 +731,14 @@ flex-direction:column-reverse;
 .heb_row{
     
 flex-direction:column;
-background-color:#f2f2f2;
 border-radius:25px 25px 25px 25px;
 margin-bottom:20px;
+width:97%;
 
+}
+
+.heb_row a{
+    box-shadow:3px 3px 1px #f2f2f2;
 }
 
 .heberg .afficher{
@@ -705,9 +748,18 @@ margin-bottom:20px;
 }
 
 .populaire{
+    width:100%;
     border-radius:0px;
+    
 }
 
+.title_pop{
+    width:90%;
+}
+
+.pop_column{
+    width:96%;
+}
 
 /*--mise en page activity--*/
 
@@ -718,6 +770,8 @@ margin-bottom:20px;
 .global_activity{
 flex-direction:column;
 padding-top:15px;
+width:98%;
+margin:auto;
 }
 
 .global_activity img{

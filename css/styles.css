@@ -595,14 +595,14 @@ footer .footer_one{
 
     header{
         flex-direction:column;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items:center;
         align-content:space-around;
         margin-bottom:15px;
         border-bottom:4px solid #f2f2f2;
         margin-left:0px;
         margin-right:0px;
-       
+        
        
     }
 
@@ -639,7 +639,7 @@ footer .footer_one{
         height:20px;
         margin-left:0px;
         margin-right:0px;
-    
+        
     }
     
     
@@ -655,10 +655,9 @@ footer .footer_one{
         color: #0065FC;    
         border-bottom: 2px solid #0065FC;
         border-top:none;
-        padding-bottom:9px;
         width:100%;
         margin-left:0px;
-        
+margin-bottom:-3px;
     }
 
     header nav ul li a:hover{
@@ -679,27 +678,27 @@ footer .footer_one{
     }
 
     .formulaire h1{
-        width:76%;
+        width:70%;
         margin:auto;
         font-size:1.2em;
-        text-align:center;
+        text-align:left;
         margin-bottom:30px;
         
     }
 
     .formulaire p{
-        width:70%;
+        width:80%;
         margin:auto;
-        text-align:left;
-        font-size:0.8em;
+        font-size:0.9em;
         margin-bottom:30px;
-        text-align:center;
+        text-align:left;
+        padding-left:10%;
     }
 
     form{
-        width:210px;
-    margin:auto;
+    width:76%;
     margin-bottom:20px;
+    margin-left:13%;
     }
 
  form a{
@@ -708,12 +707,19 @@ footer .footer_one{
      height:33px;
      text-decoration:none;
  }
+ form input{
+     width:100%;
+ }
+
+form i[class="fas fa-map-marker-alt"]{
+    width:40px;
+}
 
  form i[class="fas fa-search"]{
      background-color:#0065fc;
      color:white;
      border-radius:5px;
-     
+    
  }
 
 form .button{
@@ -744,16 +750,16 @@ padding-left:30px;
 }
 
 .information{
-    width:75%;
+    width:80%;
     margin:auto;
     margin-bottom:15px;
-        
+    padding-left:10%;
 }
 
 
 
 .information p{
-    font-size:0.8em;
+    font-size:0.9em;
 }
 
 
@@ -872,6 +878,11 @@ footer .footer_one{
 
 @media (min-width:768px) and (max-width:991px){
 
+    body{
+        width:97%;
+        margin-left:2%;
+        margin-right:1%;
+    }
    
 /*-- mise en page du header--*/
 

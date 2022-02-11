@@ -96,6 +96,7 @@ form{
     width:267px;
     border:2px solid #f2f2f2;
     border-radius:12px;
+    justify-content:space-between;
 }
 
 form i{
@@ -304,14 +305,14 @@ form a{
 
 .card h3{
     color:black;
-    font-size:0.8em;
+    font-size:0.9em;
 
 }
 
 .card p{
     color :darkgray;
     font-weight:normal;
-    font-size:0.7em;
+    font-size:0.8em;
 }
 
 .card span{ 
@@ -409,7 +410,7 @@ form a{
 
 .pop_libelle h3{
     color:black;
-    font-size:0.8em;
+    font-size:0.9em;
    
     
 
@@ -418,7 +419,7 @@ form a{
 .pop_libelle p{
     color :darkgray;
     font-weight:normal;
-    font-size:0.7em;
+    font-size:0.8em;
     padding-top:10px;
 }
 
@@ -552,7 +553,7 @@ form a{
 
 .act_libelle h3{
     color:black;
-    font-size:0.8em;
+    font-size:1em;
    
 
 }
@@ -743,14 +744,14 @@ form .button{
     width:82%;
     margin:auto;
     height:200px;
-flex-wrap:wrap;
-justify-content:space-between;
-padding-left:30px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding-left:30px;
 
 }
 
 .information{
-    width:76%;
+    width:78%;
     margin:auto;
     margin-bottom:15px;
     padding-left:10%;
